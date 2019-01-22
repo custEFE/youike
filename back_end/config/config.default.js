@@ -9,5 +9,19 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
+  config.mysql = {
+    client: {
+      host: '140.143.163.52',
+      port: '3306',
+      user: 'root',
+      password: 'wenyujie@123',
+      database: 'youke'
+    },
+    // 是否加载到 app 上，默认开启
+    app: true,
+    // 是否加载到 agent 上，默认关闭
+    agent: false,
+  }
+
   return config;
 };
